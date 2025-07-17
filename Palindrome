@@ -1,0 +1,36 @@
+ 1. Palindrome Number
+🔍 What is a Palindrome Number?
+A number is called a palindrome if it reads the same forward and backward.
+
+Examples:
+
+121 → Palindrome
+
+123 → Not a palindrome
+
+1331 → Palindrome
+
+🧠 Logic:
+To check if a number is a palindrome:
+
+Reverse the digits of the number.
+
+Compare the reversed number with the original.
+
+If both are equal, it’s a palindrome.
+
+🧑‍💻 Python Code:
+
+def is_palindrome(num):
+    original = str(num)
+    reversed_num = original[::-1]
+    return original == reversed_num
+
+# Test
+n = 121
+if is_palindrome(n):
+    print(f"{n} is a Palindrome")
+else:
+    print(f"{n} is not a Palindrome")
+📝 Output:
+121 is a Palindrome
